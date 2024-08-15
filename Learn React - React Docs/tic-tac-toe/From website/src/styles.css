@@ -1,0 +1,25 @@
+.square {
+  border: solid grey;
+  background-color: transparent;
+  margin-left: -0.5px;
+  height: 30px;
+  width: 30px;
+  vertical-align: top; 
+  
+}
+
+.board-row{
+    margin-top: -0.5px;
+}
+
+.App{
+  display: flex;
+}
+
+.left{
+  border: solid green;
+}
+
+.right{
+  border: solid red;
+}

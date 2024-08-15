@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <div class="bottom-div">
+      <div class="x1">
+        <div class="cloud"></div>
+      </div>
+      <div class="x2">
+        <div class="cloud"></div>
+      </div>
+      <div class="x3">
+        <div class="cloud"></div>
+      </div>
+      <div class="x4">
+        <div class="cloud"></div>
+      </div>
+      <div class="x5">
+        <div class="cloud"></div>
+      </div>
+    </div>
+
+    <div class="top-div">
+      <div class="child-div a">
+        <h2>Weather Poppy</h2>
+        <span class="sub-heading">Weather Forecast</span>
+        <div class="child-child-div">
+          <form action='/submit' method="post">
+          <p>
+             City:
+            <input class="city" type="text" name="city" />
+          </p>
+          <p>
+             Country:
+            <input class="country" type="text" name="country" />
+          </p>
+          <p>
+             Date:
+            <select class="date" name="date">
+              <option selected></option>
+              <option></option>
+              <option></option>
+              <option></option>
+              <option></option>
+            </select>
+            <span class="message">(Upto 5 days)</span>
+          </p> 
+          <button type="submit">Check</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="child-div b"></div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "greet-codevolution-anusree",
+  "version": "1.0.8",
+  "description": "Package for learning to code",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Anusree",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.0.1",
+    "upper-case": "^2.0.2"
+  },
+  "keywords": [
+    "uppercase",
+    "text-case",
+    "text-transform",
+    "greeting",
+    "string-processing",
+    "text-formatting",
+    "text-manipulation",
+    "nodejs",
+    "npm-package"
+  ]
+}

@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.bottom-div {
+  height: 100vh;
+  background: url("./sky.jpeg");
+  background-size: 1170px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@keyframes animateCloud {
+  0% {
+    margin-left: -800px;
+  }
+  100% {
+    margin-left: 100%;
+  }
+}
+
+.x1 {
+  animation: animateCloud 35s linear infinite;
+  transform: scale(0.35);
+}
+
+.x2 {
+  animation: animateCloud 20s linear infinite;
+  transform: scale(0.3);
+}
+
+.x3 {
+  animation: animateCloud 30s linear infinite;
+  transform: scale(0.5);
+}
+
+.x4 {
+  animation: animateCloud 18s linear infinite;
+  transform: scale(0.4);
+}
+
+.x5 {
+  animation: animateCloud 25s linear infinite;
+  transform: scale(0.55);
+}
+
+.cloud {
+  background-image: url("./cloud.png");
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+}
+
+/* -------------------- */
+.top-div {
+  height: 520px;
+  width: 1160px;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.child-div {
+  width: 400px;
+  height: 350px;
+  border-radius: 20px;
+}
+
+/* .a div  */
+.a {
+  background-color: rgb(177, 122, 214, 0.5);
+  border: rgb(255, 255, 255) solid;
+  box-shadow: 5px 5px 5px 0px rgb(0, 0, 0, 0.5);
+  z-index: 1;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-110%, -50%);
+}
+
+.a h2 {
+  font-size: 36px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 20px 0px 10px 0px;
+}
+
+.sub-heading {
+  font-size: 16px;
+  color: #ffffff;
+  background-color: rgb(133, 51, 192);
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 800;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+}
+
+.child-child-div {
+  margin: 20px 40px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px 30px 20px 30px;
+  text-align: left;
+}
+
+.city {
+  margin-left: 22px;
+}
+
+.date {
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+
+.message {
+  font-size: 10px;
+  padding: 10px 0px 10px 0px;
+}
+
+.a p {
+  font-size: 13px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 800;
+  color: #333;
+  margin: 0px 0px 15px 0px;
+}
+
+.a input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 160px;
+}
+
+.a button {
+  background-color: rgb(138, 43, 226, 0.5);
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 800;
+  color: rgb(64, 8, 117);
+  padding: 6px 12px;
+  margin-left: 100px;
+  border: blueviolet solid;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.a button:hover {
+  background-color: rgb(138, 43, 226, 0.7);
+}
+.a button:active {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* .b div */
+.b {
+  background-color: #fea47ae6;
+  border: white solid;
+  box-shadow: 5px 5px 5px 0px rgb(0, 0, 0, 0.5);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(10%, -50%);
+}
+
+img {
+  transform: scale(0.8);
+  position: absolute;
+  top: -15px;
+  margin-left: 70px;
+}
+
+.temp {
+  font-size: 40px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 15px;
+  margin-left: 160px;
+}
+
+.weather {
+  font-size: 16px;
+  background-color: #ffffff;
+  color: rgb(133, 51, 192);
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 800;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.child-div-2 {
+  background-color: rgba(74, 0, 128, 0.1);
+  margin: 110px 40px 20px 40px;
+  border-radius: 10px;
+  padding: 30px 0px 30px 80px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #3d1503e6;
+}
+
+.span {
+  font-size: 15px;
+  font-weight: 1000;
+  color: white;
+}
+
+.span1 {
+  margin: 30px;
+}
+.span2 {
+  margin: 40px;
+}
+.span3 {
+  margin: 10px;
+}

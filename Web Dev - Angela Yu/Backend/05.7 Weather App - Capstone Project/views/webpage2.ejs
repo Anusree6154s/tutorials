@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles/styles2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="bottom-div">
+      <div class="x1">
+        <div class="cloud"></div>
+      </div>
+
+      <div class="x2">
+        <div class="cloud"></div>
+      </div>
+
+      <div class="x3">
+        <div class="cloud"></div>
+      </div>
+
+      <div class="x4">
+        <div class="cloud"></div>
+      </div>
+
+      <div class="x5">
+        <div class="cloud"></div>
+      </div>
+    </div>
+
+    <div class="top-div">
+      <div class="child-div a">
+        <h2>Weather Poppy</h2>
+        <span class="sub-heading">Weather Forecast</span>
+        <div class="child-child-div">
+          <form action="/submit" method="post">
+            <p>
+              City:
+              <input class="city" type="text" name="city" />
+            </p>
+            <p>
+              Country:
+              <input class="country" type="text" name="country" />
+            </p>
+            <p>
+              Date:
+              <select class="date" name="date">
+                <option selected></option>
+                <option></option>
+                <option></option>
+                <option></option>
+                <option></option>
+              </select>
+              <span class="message">(Upto 5 days)</span>
+            </p>
+            <button type="submit">Check</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="child-div b">
+        <div class="child-div-1">
+          <div class="img-element">
+            <img src="https://openweathermap.org/img/wn/<%=icon%>@2x.png" />
+            <span class="temp"><%=temp%>°C</span>
+          </div>
+          <p class="weather"><%=weather%></p>
+        </div>
+
+        <div class="child-div-2">
+          <p>
+            <span class="name">Cloud: </span
+            ><span class="span span1"><%=cloud%> %</span>
+          </p>
+          <p>
+            <span class="name">Wind: </span>
+            <span class="span span2"><%=wind%> m/s</span>
+          </p>
+          <p>
+            <span class="name">Humidity: </span
+            ><span class="span span3"><%=humidity%> %</span>
+          </p>
+          <p>
+            <span class="name">Visibility: </span
+            ><span class="span span4"><%=visibility%> m</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

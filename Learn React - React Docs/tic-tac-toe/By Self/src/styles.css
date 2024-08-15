@@ -1,0 +1,23 @@
+button{
+    width: 20px;
+    height: 20px;
+    margin-top: -3px;
+    padding: 0px;
+    background-color: transparent;
+    border: solid black 1px;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(3, 20px);
+    gap: 0px;
+}
+
+.app{
+    display: flex;
+}
+
+.dashboard{
+    border: solid green;
+    margin-left: 20px;
+}
