@@ -1,26 +1,28 @@
-import ReactDom from "react-dom/client";
 import React from "react";
+import ReactDOM from "react-dom/client";
 import App from "./App";
 
-// Import the functions you need from the SDKs you need
+// Import the Firebase SDK and initialize the app
 import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
+// Firebase configuration using environment variables
+// CRA automaticlly imports env files fom.env
 const firebaseConfig = {
-  apiKey: "AIzaSyDtC9MUyyixWe_bX_vLWEh798h4bVFQK6k",
-  authDomain: "react-chat-app-53b6d.firebaseapp.com",
-  databaseURL: "https://react-chat-app-53b6d-default-rtdb.firebaseio.com",
-  projectId: "react-chat-app-53b6d",
-  storageBucket: "react-chat-app-53b6d.appspot.com",
-  messagingSenderId: "145689021844",
-  appId: "1:145689021844:web:dff8859518a7bd5c3a5381"
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  databaseURL: process.env.REACT_APP_DATABASE_URL,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+initializeApp(firebaseConfig);
 
-ReactDom.createRoot(document.getElementById('root')).render(
-    <React.StrictMode><App></App></React.StrictMode>
-)
+// Render the React app
+ReactDOM.createRoot(document.getElementById('root')).render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
+);
